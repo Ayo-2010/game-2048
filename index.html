@@ -23,7 +23,10 @@
   </header>
 
   <div class="toolbar">
-    <button id="newBtn" type="button">New game</button>
+    <div class="toolbar-actions">
+      <button id="newBtn" type="button">New game</button>
+      <button class="help-btn" id="helpBtn" type="button">How to play</button>
+    </div>
     <p id="status">Use the arrow keys or swipe.</p>
   </div>
 
@@ -35,6 +38,23 @@
     </div>
   </div>
 </main>
+
+<div class="help-modal" id="helpModal" hidden>
+  <div class="help-backdrop" data-close></div>
+  <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button class="help-close" id="helpClose" type="button" aria-label="Close">×</button>
+    <h2 class="help-title" id="helpTitle">How to play</h2>
+    <p class="help-lede">Slide the numbered tiles around the grid. When two tiles with the same number touch they merge into one, doubling their value.</p>
+    <ol class="help-steps">
+      <li>Use the arrow keys or WASD, or swipe on a touch screen.</li>
+      <li>Every tile slides as far as it can in that direction.</li>
+      <li>Two equal tiles merge into one and add their value to your score.</li>
+      <li>A new tile appears after each move that changes the board.</li>
+      <li>Reach the 2048 tile to win, then keep going for a higher score.</li>
+      <li>The game ends when the board fills and no move is left.</li>
+    </ol>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

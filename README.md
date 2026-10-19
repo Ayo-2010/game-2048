@@ -9,6 +9,7 @@ The sliding tile puzzle. Combine matching numbers until a tile reaches 2048.
 - Win overlay at 2048 with an option to keep playing
 - Game over detection when no moves remain
 - Colour coded tiles up to 8192
+- A How to play popup explains the rules
 
 ## Running it
 
